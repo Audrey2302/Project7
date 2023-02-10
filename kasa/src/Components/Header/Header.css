@@ -1,0 +1,17 @@
+.kasa-nav {
+    position: absolute;
+    left: 75.08%;
+    right: 0%;
+}
+
+.kasa-nav-accueil {
+    text-decoration: none;
+    color: #FF6060;
+    padding: 10px;
+}
+
+.kasa-nav-apropos {
+    text-decoration: none;
+    color: #FF6060;
+    padding: 10px;
+}

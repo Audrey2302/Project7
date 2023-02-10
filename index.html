@@ -24,8 +24,11 @@
             function Header() {
             return (<div> <h1>Kasa</h1></div>)
             }
+            function Description() {
+            return (<p>Ici achetez toutes les plantes dont vous avez toujours rêvé 🌵🌱🎍</p>)
+            }
 
-            ReactDOM.render(<Header/>, document.getElementById("root"))
+            ReactDOM.render(<div><Header /><Description /></div>, document.getElementById("root"))
 
             </script>
 
