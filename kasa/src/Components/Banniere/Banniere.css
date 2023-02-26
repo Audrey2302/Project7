@@ -1,0 +1,44 @@
+
+
+.banniere {
+    height: 230px;
+    
+    position: relative;
+    margin: 0px 50px;
+  }
+  
+.banniere-img {
+    border-radius: 25px;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+  
+  .banniere-sombre {
+    background-color: #000000;
+    border-radius: 25px;
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .banniere-txt {
+    width: 50%;
+    color: #ffffff;
+    font-size: 35px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @media screen and (max-width: 1008px) {
+    .banniere-txt {
+      font-size: 30px;
+      left: 15px;
+      transform: translateY(-50%);
+    }
+  }

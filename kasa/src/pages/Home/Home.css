@@ -1,0 +1,20 @@
+
+.cards-container {
+    display: flex;
+    justify-content: space-evenly;
+    
+    gap: 40px;
+    
+    padding: 5% 1%;
+    margin: 50px 50px;
+    flex-wrap: wrap;
+
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    
+}
+
+.link_card_logement {
+    text-decoration: none;
+}   
+

@@ -1,0 +1,56 @@
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.descriptiondulogement {
+    display: flex;
+    flex-direction: column;
+}
+
+.titredulogement {
+    color:#FF6060;
+    font-size: 33px;
+    padding-bottom: 5px;
+}
+
+.endroitdulogement {
+    color:#FF6060;
+    font-size: 18px;
+}
+
+.hote {
+    display: flex;
+    align-items: center;
+}
+
+/* FINIE */
+.nomhote {
+    color:#FF6060;
+    width: 60px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+/* Image de l'hote finie */
+.imagehote { 
+    border-radius: 50%;
+    height: 60px;
+   
+}
+
+.tags{
+    margin-top: 33px;
+}
+
+.description_equipements {
+    display: flex;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.description_equipements .Collapse {
+    width: 50%;
+}

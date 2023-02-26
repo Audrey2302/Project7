@@ -1,17 +1,28 @@
-.kasa-nav {
+
+
+/* .kasa-nav {
     position: absolute;
     left: 75.08%;
     right: 0%;
+    
+} */
+ 
+.kasa_header {
+    display: flex;
+    align-items: center;
+    margin: 40px 50px;
+    justify-content: space-between;
+
+    
 }
 
-.kasa-nav-accueil {
+.nav {
     text-decoration: none;
     color: #FF6060;
     padding: 10px;
 }
-
-.kasa-nav-apropos {
-    text-decoration: none;
-    color: #FF6060;
-    padding: 10px;
+.kasa_image {
+    width: 210px;
+	height: 68px;
 }
+
