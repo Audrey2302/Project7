@@ -27,6 +27,7 @@ function Carrousel({images}) {
 
     return(
         <div className="carrousel">
+            {/* Le composant renvoie une div qui contient les images et les flèches cliquables.La condition "nombreImg > 1" est utilisée pour afficher les flèches seulement si il y a plus d'une image */}
             {
                 nombreImg > 1 && <img className="fleche fleche-gauche" src={fleche} alt="Contenu précedént" onClick={imgPrecedente}/>
             }

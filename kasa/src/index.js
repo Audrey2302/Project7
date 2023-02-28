@@ -1,25 +1,14 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom/client'
 import { BrowserRouter} from 'react-router-dom'
 import App from './App'
-// import { createGlobalStyle } from 'styled-components'
 
 
-// //mettre ca dans un autre dossier utils chap2-b!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// const GlobalStyle = createGlobalStyle`
-//     div {
-      
-    
-//       box-sizing: border-box;
-//       font-family: "Montserrat", sans-serif;
-//     }
-// `
 
-ReactDOM.render(
+const root = ReactDOM.createRoot( document.getElementById('root'))
 
-    <BrowserRouter>
-      {/* <GlobalStyle/> */}
+root.render(
+  <BrowserRouter>
         <App />
-    </BrowserRouter> ,
-  document.getElementById('root')
+  </BrowserRouter> ,
 )

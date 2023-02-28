@@ -13,7 +13,7 @@ function APropos() {
         <div>
             <Banniere picture={picture} alt="Montagne"/>
             {Apropos.map((propos) => (
-                <Collapse titre={propos.titre} description={propos.texte}/>
+                <Collapse key={propos.id} titre={propos.titre} description={propos.texte}/>
             ))}
             
         </div>

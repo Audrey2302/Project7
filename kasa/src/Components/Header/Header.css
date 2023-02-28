@@ -1,16 +1,9 @@
 
 
-/* .kasa-nav {
-    position: absolute;
-    left: 75.08%;
-    right: 0%;
-    
-} */
- 
 .kasa_header {
     display: flex;
     align-items: center;
-    margin: 40px 50px;
+    margin: 3% 4%;
     justify-content: space-between;
 
     
@@ -22,7 +15,7 @@
     padding: 10px;
 }
 .kasa_image {
-    width: 210px;
+    width: 19%;
 	height: 68px;
 }
 

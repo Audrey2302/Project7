@@ -1,15 +1,15 @@
 .carrousel {
-    display: block;
-    height: 415px;
-    margin: auto auto 30px auto;
+
+    
+    margin: 3% 4%;
     position: relative;
-    width: 100%;
+    
 }
 
 .fleche {
     position: absolute;
     width: 45px;
-    z-index: 1;
+    
 }
 .fleche:hover {
     cursor: pointer;
@@ -19,19 +19,21 @@
 .fleche-gauche {
     margin-left: 25px;
     top: 50%;
-    transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(-90deg);
 }
 .fleche-droite {
     margin-right: 25px;
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(90deg);
 }
 
 .carrousel-img {
     border-radius: 15px;
     height: 415px;
-    object-fit: cover;
+    object-fit: cover; 
+    /* overflow: hidden; */
+   
     display: none;
     width: 100%
 }

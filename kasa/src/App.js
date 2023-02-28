@@ -19,7 +19,6 @@ function App () {
                     <Route path="/" element={<Home /> }/>
                     <Route path="/Apropos" element={<Apropos /> }/>
                     <Route path="/logement/:id" element={<FicheLogement />} />
-
                     <Route path="*" element={<Error /> }/> 
 
                 </Routes>
