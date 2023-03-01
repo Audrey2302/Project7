@@ -1,9 +1,6 @@
-import { Link } from 'react-router-dom'  //link c'est comme une balise anchor
+import { Link } from 'react-router-dom'  
 import './Header.css'
-
 import logo from "../../Assets/Images/LOGO.svg"
-
-
 
 function Header() {
     return (
@@ -15,7 +12,5 @@ function Header() {
                 
             </nav>
         </div>
-    )
-}
-
+    )}
 export default Header

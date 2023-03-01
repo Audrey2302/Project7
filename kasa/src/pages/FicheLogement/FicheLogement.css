@@ -60,7 +60,7 @@
 }
 
  
-@media screen and (min-width:800px) {
+@media screen and (min-width:850px) {
     .description_tags {
         width: 65%;
         float: left;

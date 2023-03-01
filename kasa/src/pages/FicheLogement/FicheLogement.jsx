@@ -12,20 +12,15 @@ import etoilevide from "../../Assets/Images/EtoileVide.png"
 function FicheLogement () {
     // Récupère la bonne fiche 
     const id = useParams();
-   
     const ficheLogement = ListeLogements.find(logement => logement.id === id.id);
-
 
     // Pour les notes
     const nbrEtoile = [1, 2, 3, 4, 5];
-    
-    
 
     return (
         ficheLogement ? (
             <div>
                 <Carrousel images={ficheLogement.pictures}/>
-
 
                 <div className="description_tags">
                     <div className="descriptiondulogement">
@@ -36,11 +31,9 @@ function FicheLogement () {
                         {ficheLogement.tags.map((tags, index) => (
                             <Tag key={index} nom={tags} />
                         ))}
-                    </div>
-
-
-                    
+                    </div>   
                 </div>
+
                 <div className="hote_etoile">
 
                     <div className="etoile">
@@ -51,27 +44,19 @@ function FicheLogement () {
                                 )
                             })}
                     </div>
-
                     <div className="hote">
                         <span className="nomhote">{ficheLogement.host.name}</span>
                         <img className="imagehote" src={ficheLogement.host.picture} alt="L'hote" />
                     </div>
-
-                    
                 </div>
+
                 <div className="description_equipements">
                     <Collapse titre="Description" description={ficheLogement.description} />
                     <Collapse className="equipements" titre="Equipements" description={ficheLogement.equipments}/>
 
                 </div>
-            
-            
             </div>
         ) : <Navigate to="/404"  /> 
-
-    )  
-    
+    )    
 }
 export default FicheLogement
-
-/*Suivant l'id on prend certaine photo pour le carrousel ! ON NE PREND PAS TOUT*/

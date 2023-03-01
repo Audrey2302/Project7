@@ -1,7 +1,5 @@
 import Banniere from "../../Components/Banniere/Banniere.jsx";
 import Card from "../../Components/Card/Card.jsx";
-// import axios from "axios";
-// import { useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import Appartement from "../../Datas/logement.json";
 import picture from "../../Assets/Images/Banner.png";
@@ -11,7 +9,7 @@ function Home() {
  
     return (
       <div> 
-        
+  
         <Banniere picture={picture} alt="chez vous, partout et ailleurs" title="Chez vous, partout et ailleurs"/>
         <div className="cards-container" >
           
@@ -30,5 +28,3 @@ function Home() {
   
   export default Home
 
-
-//les deux props cover et tittle

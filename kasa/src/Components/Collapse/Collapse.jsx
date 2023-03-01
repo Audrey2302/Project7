@@ -3,7 +3,6 @@ import "./Collapse.css";
 import fleche from "../../Assets/Images/fleche.png"
 
 function Collapse({titre, description}) {
-    /* Crée un Hook d'état */ 
     const [ouvert, setOuvert] = useState(false);
 
     return(
@@ -16,11 +15,8 @@ function Collapse({titre, description}) {
             </div>
             {
                 /* Si le bandeau est à TRUE alors il affichera la description  */
-                // && => condition
                 ouvert && <div className="description-Collapse">{description}</div>
             }
         </div>
-    );
-}
-
+    )}
 export default Collapse;

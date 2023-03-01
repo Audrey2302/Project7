@@ -8,7 +8,5 @@ function ErrorComp () {
             <p className="ErrorText ">Oups! La page que vous demandez n'existe pas.</p>
             <Link to="/" className='RetourAccueil'>Retourner sur la page d’accueil</Link>
         </div>
-    )
-}
-
+    )}
 export default ErrorComp

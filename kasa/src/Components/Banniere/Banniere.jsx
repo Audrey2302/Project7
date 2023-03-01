@@ -1,4 +1,3 @@
-
 import "./Banniere.css"
 
 function Banniere ({picture, alt, title}) {
@@ -7,9 +6,6 @@ function Banniere ({picture, alt, title}) {
             <img className="banniere-img" src={picture} alt={alt} />
             <div className="banniere-sombre"></div>
             <span className="banniere-txt">{title}</span>
-        </div>
-        
-    )
-}
-
+        </div> 
+    )}
 export default Banniere
