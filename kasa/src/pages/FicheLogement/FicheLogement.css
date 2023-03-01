@@ -1,8 +1,10 @@
-.description {
+/* A revoir good  */
+.description_tags {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin: 3% 4%;
+    gap: 20px;
+    flex-direction: column;
 }
 
 .descriptiondulogement {
@@ -41,34 +43,48 @@
     height: 60px;
    
 }
-.tags_etoile {
+/* a revoir */
+.hote_etoile {
     margin: 3% 4%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.tags {
-    display: flex;
-
-}
 
 .description_equipements {
     display: flex;
-    margin-top: 25px;
-    width: 100%;
+    flex-direction: column;
+    margin: 5% 4%;
+    gap: 30px;
 }
 
-.description_equipements .Collapse {
-    width: 50%;
-}
+
  
-@media screen and (max-width:800px) {
-    .description {
-        
-        flex-direction: column;
-        
+@media screen and (min-width:800px) {
+    .description_tags {
+        width: 65%;
+    }
+    .hote_etoile {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        position: absolute;
+        right: 4%;
+        top: 380px;
+    }
+    .hote {
+        margin-bottom: 20px;
+    }
+
+    .description_equipements {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5% 4%;
+        gap: 30px;
     }
 
 
 }
+

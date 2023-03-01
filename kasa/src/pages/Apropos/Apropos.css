@@ -1,0 +1,12 @@
+.collapses{
+    margin: 3% 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+@media screen and (max-width:800px) {
+    .collapses{
+        margin: 3% 4%;
+    }
+}

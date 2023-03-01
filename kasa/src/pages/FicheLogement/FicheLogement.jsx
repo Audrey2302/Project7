@@ -4,7 +4,7 @@ import ListeLogements from "../../Datas/logement.json"
 import Carrousel from "../../Components/Carrousel/Carrousel"
 import { useParams, Navigate } from "react-router-dom"
 import "./FicheLogement.css"
-import Tag  from "../../Components/Tag/Tag.js"
+import Tag  from "../../Components/Tag/Tag.jsx"
 import Collapse from "../../Components/Collapse/Collapse"
 import etoilepleine from "../../Assets/Images/EtoilePleine.png"
 import etoilevide from "../../Assets/Images/EtoileVide.png"
@@ -25,23 +25,23 @@ function FicheLogement () {
         ficheLogement ? (
             <div>
                 <Carrousel images={ficheLogement.pictures}/>
-                <div className="description">
+
+
+                <div className="description_tags">
                     <div className="descriptiondulogement">
                         <span className="titredulogement">{ficheLogement.title}</span>
                         <span className="endroitdulogement">{ficheLogement.location}</span>
                     </div>
-                    <div className="hote">
-                        <span className="nomhote">{ficheLogement.host.name}</span>
-                        <img className="imagehote" src={ficheLogement.host.picture} alt="L'hote" />
-                    </div>
-                </div>
-                <div className="tags_etoile">
-
                     <div className="tags">
                         {ficheLogement.tags.map((tags, index) => (
                             <Tag key={index} nom={tags} />
                         ))}
                     </div>
+
+
+                    
+                </div>
+                <div className="hote_etoile">
 
                     <div className="etoile">
                         {nbrEtoile.map((etoile, index) => {
@@ -51,6 +51,13 @@ function FicheLogement () {
                                 )
                             })}
                     </div>
+
+                    <div className="hote">
+                        <span className="nomhote">{ficheLogement.host.name}</span>
+                        <img className="imagehote" src={ficheLogement.host.picture} alt="L'hote" />
+                    </div>
+
+                    
                 </div>
                 <div className="description_equipements">
                     <Collapse titre="Description" description={ficheLogement.description} />
