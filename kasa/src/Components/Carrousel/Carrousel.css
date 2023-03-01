@@ -8,7 +8,7 @@
 
 .fleche {
     position: absolute;
-    width: 45px;
+    width: 25px;
     
 }
 .fleche:hover {
@@ -32,7 +32,7 @@
     border-radius: 15px;
     height: 415px;
     object-fit: cover; 
-    /* overflow: hidden; */
+    
    
     display: none;
     width: 100%
@@ -42,10 +42,7 @@
 }
 
 @media screen and (max-width: 1490px) {
-    .carrousel {
-        height: 255px;
-    }
-
+  
     .fleche {
         width: 15px;
     }
@@ -57,7 +54,5 @@
         margin-right: 5px;
     }
 
-    .carrousel-img {
-        height: 255px;
-    }
+    
 }

@@ -11,7 +11,7 @@ import "./App.css"
 function App () {
     return (
         <div className="App">
-           
+
             <Header /> 
 
                 <Routes>
@@ -26,5 +26,4 @@ function App () {
         </div>
     )
 }
-
 export default App;
