@@ -13,7 +13,6 @@ function FicheLogement () {
     // Récupère la bonne fiche 
     const id = useParams();
     const ficheLogement = ListeLogements.find(logement => logement.id === id.id);
-
     // Pour les notes
     const nbrEtoile = [1, 2, 3, 4, 5];
 
@@ -53,10 +52,8 @@ function FicheLogement () {
                 <div className="description_equipements">
                     <Collapse titre="Description" description={ficheLogement.description} />
                     <Collapse className="equipements" titre="Equipements" description={ficheLogement.equipments}/>
-
                 </div>
             </div>
         ) : <Navigate to="/404"  /> 
-    )    
-}
+    )}
 export default FicheLogement
